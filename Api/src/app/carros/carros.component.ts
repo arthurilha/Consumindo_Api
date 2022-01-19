@@ -30,12 +30,25 @@ export class CarrosComponent implements OnInit {
 
   adicionarCarro(){
     const newCar : getCarros = {
-       'ano' : 'civic',
+       'nome' : 'civic',
        'marca' : 'honda' 
     }
 
     this.car.postCar(newCar).subscribe((novoCarro)=>{
         console.log(novoCarro)
+    })
+  }
+
+
+  atualizarCarro(){
+    const attCar : getCarros ={
+      'nome' : 'city',
+      'marca': 'honda',
+       id : 8
+    }
+
+    this.car.putCar(attCar).subscribe((updateCar) =>{
+      console.log(updateCar)
     })
   }
 }

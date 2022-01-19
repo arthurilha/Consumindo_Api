@@ -27,4 +27,9 @@ export class CarrosService{
     // metodo post é para adicionar novos carros no servidor 
   }
 
+  public putCar(carrinho : getCarros):Observable<getCarros>{
+    return this.httpClient.put<getCarros>(`${Api}carros/${carrinho.id}`, carrinho)
+    // o metodo put ser para atualizar um iten que esta no servidor ou seja um carro
+  }
+
 }

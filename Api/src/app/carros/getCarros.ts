@@ -1,5 +1,5 @@
 export interface getCarros{
   marca : string
-  ano : string
+  nome : string
   id? : number  //? = não obrigatorio
 }
