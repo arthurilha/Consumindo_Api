@@ -32,4 +32,8 @@ export class CarrosService{
     // o metodo put ser para atualizar um iten que esta no servidor ou seja um carro
   }
 
+  public deletCar(carrinho : getCarros): Observable<getCarros>{
+    return this.httpClient.delete<getCarros>(`${Api}carros/${carrinho.id}`)
+  }
+
 }

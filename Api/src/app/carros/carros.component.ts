@@ -51,4 +51,17 @@ export class CarrosComponent implements OnInit {
       console.log(updateCar)
     })
   }
+
+
+  deletarCarro(){
+    const dltCar : getCarros = {
+      id : 7,
+      'marca' : 'daleee',
+      'nome' : 'teste funcionando'
+    }
+
+    this.car.deletCar(dltCar).subscribe((deletando) => {
+      console.log(deletando)
+    })
+  }
 }
