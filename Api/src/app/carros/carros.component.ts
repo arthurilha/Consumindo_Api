@@ -19,4 +19,10 @@ export class CarrosComponent implements OnInit {
     })
   }
 
+  obterUm(){
+    this.car.getCarId(4).subscribe((carros)=>{
+      console.log(carros)
+    })
+  }
+
 }

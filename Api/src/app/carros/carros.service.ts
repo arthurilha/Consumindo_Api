@@ -17,4 +17,9 @@ export class CarrosService{
      //metodo get é para fazer consultas nao altera nada no servidor
   }
 
+  public getCarId(id : number):Observable<getCarros>{
+    return this.httpClient.get<getCarros>(`${Api}carros/${id}`)
+    //metodo get id é para fazer consultas especificas no servidor como carro de id =1 
+  }
+
 }
