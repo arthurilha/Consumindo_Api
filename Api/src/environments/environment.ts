@@ -7,7 +7,7 @@ export const environment = {
 };
 
 export const Api = "http://localhost:3000/"
-//para rodar essa api usar npx json-server --watch db.json no terminal
+//para rodar essa api usar npx json-server --watch db.json no terminal desta pasta
 
 
 
