@@ -22,4 +22,9 @@ export class CarrosService{
     //metodo get id é para fazer consultas especificas no servidor como carro de id =1 
   }
 
+  public postCar(carrinho : getCarros ):Observable<getCarros>{
+    return this.httpClient.post<getCarros>(`${Api}carros`, carrinho)
+    // metodo post é para adicionar novos carros no servidor 
+  }
+
 }
